@@ -1,3 +1,53 @@
+// ROBOTO FONT IMPORT
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// NORMILIZE LIB
+@import '~normalize.css';
+
+// VARIABLES IMPORT
+@import "variables";
+
+// MIXINS IMPORT
+@import "mixins";
+
+
+// REMOVE BROWSER STYLES AND CREATE BASE STYLES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
 body {
-    background-color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
 }
+
+.excel {
+    position: relative;
+    color: #888;
+    height: 100%;
+    max-width: 100%;
+    font-size: 0.8rem;
+}
+
+// UI COMPONENTS
+@import "UI/btn";
+
+// TABLE PAGE BLOCKS
+
+// HEADER BLOCK IMPORT
+@import "header/header";
+
+// FORMULA BLOCK IMPORT
+@import "formula/formula";
+
+// TOOLBAR BLOCK IMPORT
+@import "toolbar/toolbar";
+
+// TABLE BLOCK IMPORT
+@import "table/table";
+
+
+// DASHBOARD PAGE BLOCKS
+@import "dashboard/dashboard";

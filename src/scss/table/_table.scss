@@ -1,0 +1,65 @@
+.excel__table {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: $headerHeight + $toolbarHeight + $formulaHeight;
+    overflow-x: auto;
+    padding-bottom: 2px;
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        min-height: 20px;
+        height: $rowHeight;
+    }
+
+    .row-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: $infoCellWidth;
+        height: 100%;
+        border: 1px solid $borderColor;
+        background: #f8f0fa;
+        border-top: 0;
+    }
+
+    .row-data {
+        display: flex;
+    }
+
+    .column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f8f0fa;
+        min-width: 40px;
+        width: $cellWidth;
+        border: 1px solid $borderColor;
+        height: 100%;
+        border-top: 0;
+        border-left: 0;
+    }
+
+    .cell {
+        min-width: 40px;
+        padding: 5px;
+        width: $cellWidth;
+        min-width: 40px;
+        height: 100%;
+        border: 1px solid #e2e3e3;
+        border-top: 0;
+        border-left: 0;
+        color: #111;
+        white-space: nowrap;
+        outline: none;
+
+        &.selected {
+            border: none;
+            outline: 2px solid #3c74ff;
+            z-index: 2;
+        }
+
+    }
+
+}
